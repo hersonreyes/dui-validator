@@ -18,7 +18,11 @@ describe('App', () => {
     container.remove();
   })
 
-  it.todo('should render');
+  it('should render',()=>{
+    const div = document.createElement('div');
+    ReactDOM.render(<App/>,div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
 
   it('should have title "Mi DUI es valido?"',()=>
   {
